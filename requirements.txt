@@ -1,0 +1,9 @@
+torch 
+torchvision
+torchinfo
+transformers
+numpy
+opencv
+Pillow
+editdistance
+tqdm

@@ -3,7 +3,7 @@ torchvision
 torchinfo
 transformers
 numpy
-opencv
+opencv-python
 Pillow
 editdistance
 tqdm

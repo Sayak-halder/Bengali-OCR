@@ -2,14 +2,14 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import models
-import configs.config as config
+from configs.config import Config as config
 from transformers import ViTModel
 
 
 class BengaliResNetOCR(nn.Module):
     def __init__(self, num_chars):
         super().__init__()
-        self.backbone = models.resnet18(pretrained=True)
+        self.backbone = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
         self.backbone.conv1 = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)
         self.feature_extractor = nn.Sequential(
             self.backbone.conv1, self.backbone.bn1, self.backbone.relu,

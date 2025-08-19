@@ -10,6 +10,7 @@ from configs.config import Config
 from data.dataset import BengaliWordDataset
 from data.augmentation import BengaliAugmentation
 
+
 def train_model(model, train_loader, val_loader, device, model_type):
     optimizer = torch.optim.AdamW(model.parameters(), lr=Config.LEARNING_RATE, weight_decay=Config.WEIGHT_DECAY)
     criterion = nn.CTCLoss(blank=0)

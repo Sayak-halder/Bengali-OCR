@@ -117,3 +117,6 @@ bengali-ocr/
 
 ## 🤝 Contribution
 Contributions are welcome! Please open an issue or submit a pull request.
+
+#### Don't use the data_1M dataset as its only for testing purpose, Use the below given link for the original dataset
+https://www.kaggle.com/datasets/mnsm92/bengali-ocr-dataset-1m
